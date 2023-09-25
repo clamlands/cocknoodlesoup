@@ -1,0 +1,11 @@
+  @font-face {
+    font-family: "CrimsonText";
+    src: url(./fonts/CrimsonText.woff2);
+  }
+
+  /*----------Script fonts----------*/
+  @font-face {
+    font-family: "Sacramento";
+    src: url(./fonts/script/Sacramento-Regular.ttf);
+  }
+

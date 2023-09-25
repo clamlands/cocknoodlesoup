@@ -1,13 +1,265 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  overflow-y:scroll;
+}
+
+body{
+  font-family: "CrimsonText";
+  color: var(--light-text);
+  --dark-text: #404040;
+  --light-text: #383838;
+  --line-gray: #CACACA;
+  --background: white;
+  mix-blend-mode: multiply;
+  background-repeat: repeat;
+  background-image: url("/src/media/noise.png");
+}
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-pic, .about-text, .cock, .hot-cock{
+  animation: fadeInAnimation ease .75s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*----------HTML TAGS----------*/
+h1{
+  color: var(--dark-text);
+  margin-bottom: 24px;
+}
+
+h2{
+  color: var(--dark-text);
+  margin-bottom: 24px;
+}
+
+main{
+  padding: 15px 15px 0 15px;
+  flex-grow: 1;
+  max-width: 1024px;
+  width: 100%;
+  font-size: 17px;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+a{
+  color: inherit;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+footer{
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid var(--line-gray);
+  width: 100%;
+  margin-top: 24px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.17);
+}
+
+/*----------CLASSES----------*/
+.shows{
+  margin-top: 48px;
+}
+
+.show{
+  margin-bottom: 20px;
+  border-bottom: 1px dotted gray;
+}
+
+.date{
+  font-style: italic;
+}
+
+.blog-card{
+  border: 1px solid var(--line-gray);
+  padding: 8px;
+  margin-bottom: 24px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.continue{
+  font-weight: bold;
+  margin-top: auto;
+  display: inline-block;
+}
+
+.tags{
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.tag{
+  background-color: var(--line-gray);
+  border-radius: 8px;
+  padding: 0px 8px;
+}
+
+.youtube{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+}
+
+.about{
+  margin-top: 18px;
+  margin-bottom: 36px;
+}
+
+.about-text{
+  margin-top: 18px;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.about-pic{
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.big-cock-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.cock-container{
+  max-width: 400px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hot-cock{
+  top: 0;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transition: 1s;
+}
+
+.cold-cock{
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: 1s;
+}
+
+.cock-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: #e93c2c;
+  transform: rotate(30deg);
+  top: 50px;
+  right: 8px;
+  left: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+
+
+/*----------DESKTOP----------*/
+@media (min-width: 768px){
+  .columns{
+    display: grid;
+    grid-template-columns: 3fr 1px 2fr;
+    gap: 20px;
+    border-top: 1px solid var(--line-gray);
+    padding-top: 24px;
+  }
+
+  .divider{
+    background-color: var(--line-gray);
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    align-items: center;
+    margin: 36px 14px;
+  }
+
+  .about-pic{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+  }
+
+  .about-text{
+    font-size: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 30px
+  }
+
+  .shows{
+    margin-top: 0;
+  }
+
+  .blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: max-content;
+    column-gap: 15px;
+  }
+
+  .blog-page{
+    max-width: 680px;
+  }
+
+  .big-cock-container{
+    margin-top: 100px;
+  }
+
+  .cock-text{
+    top: 25px;
+    right: 25px;
+  }
 }
