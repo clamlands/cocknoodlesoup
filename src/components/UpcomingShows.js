@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-export default function UpcomingShows() {
-  const [shows, setShows] = useState([]);
-
+export default function UpcomingShows({ shows, setShows }) {
   useEffect(() => {
     async function getCalendar() {
       let today = new Date().toISOString();
+      //AIzaSyB5ivZJt1bTKq603mx5-JEAAJCJ39O4VUE
       const response = await fetch(
-        `https://www.googleapis.com/calendar/v3/calendars/7tnqiq0fs0ah8fsbkhaak9vgnc@group.calendar.google.com/events?key=AIzaSyB5ivZJt1bTKq603mx5-JEAAJCJ39O4VUE&timeMin=${today}&singleEvents=True&orderBy=startTime`
-        //`https://www.googleapis.com/calendar/v3/calendars/e91b4cee8a0f2a936977d28e501524d09acdf7a49e96cf72d3480fd7731b515f@group.calendar.google.com/events?key=AIzaSyAc_spvH8Ijkc7Jwzv9aztEXM94cW8ImVI&timeMin=${today}&singleEvents=True&orderBy=startTime`
+        `https://www.googleapis.com/calendar/v3/calendars/7tnqiq0fs0ah8fsbkhaak9vgnc@group.calendar.google.com/events?key=${process.env.REACT_APP_API_KEY}&timeMin=${today}&singleEvents=True&orderBy=startTime`
       );
       const showsData = await response.json();
       setShows(showsData.items);
     }
-    getCalendar();
+    if (shows.length === 0) {
+      getCalendar();
+    }
   }, []);
 
   function mapItems() {

@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { useState } from "react";
 import Home from "./Home";
 import Blog from "./Blog";
 import BlogPage from "./BlogPage";
@@ -9,6 +10,7 @@ import Footer from "./Footer";
 import ErrorPage from "./ErrorPage";
 
 export default function Router() {
+  const [shows, setShows] = useState([]);
   const blogPosts = [
     {
       date: "August 8, 2023",
@@ -16,7 +18,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -59,7 +61,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -102,7 +104,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -145,7 +147,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -188,7 +190,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -231,7 +233,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -274,7 +276,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -317,7 +319,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -360,7 +362,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -403,7 +405,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -446,7 +448,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -489,7 +491,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -532,7 +534,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -575,7 +577,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -618,7 +620,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -661,7 +663,7 @@ export default function Router() {
       summary:
         "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -704,7 +706,7 @@ export default function Router() {
       summary:
         "78 years 30 days passed between the day Japan bombed Pearl Harbor, and the day an armed mob stormed the U.S. Capitol.",
       body: (
-        <article>
+        <article className="blog-body">
           <p>
             78 years 30 days passed between the day Japan bombed Pearl Harbor,
             and the day an armed mob stormed the U.S. Capitol. The average
@@ -749,7 +751,13 @@ export default function Router() {
       children: [
         {
           path: "/",
-          element: <Home blogPosts={blogPosts.slice(0, 5)} />,
+          element: (
+            <Home
+              blogPosts={blogPosts.slice(0, 5)}
+              shows={shows}
+              setShows={setShows}
+            />
+          ),
         },
         {
           path: "/blog",

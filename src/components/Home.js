@@ -3,7 +3,7 @@ import UpcomingShows from "./UpcomingShows";
 import BlogCard from "./BlogCard";
 import about from "../media/images/about-850.webp";
 
-export default function Home({ blogPosts }) {
+export default function Home({ blogPosts, shows, setShows }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +43,7 @@ export default function Home({ blogPosts }) {
           <div className="blogs">{mapPosts()}</div>
         </section>
         <div className="divider"></div>
-        <UpcomingShows />
+        <UpcomingShows shows={shows} setShows={setShows} />
       </div>
     </main>
   );
