@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cocknoodlesoup/static/css/main.09a1afc1.css",
-    "main.js": "/cocknoodlesoup/static/js/main.8b591b4b.js",
+    "main.js": "/cocknoodlesoup/static/js/main.7f228bf0.js",
     "static/media/cos1-850.webp": "/cocknoodlesoup/static/media/cos1-850.32fafeddc4efd9ea8a03.webp",
     "static/media/cos3-850.webp": "/cocknoodlesoup/static/media/cos3-850.b31e3aa67babb2a298d3.webp",
     "static/media/about-850.webp": "/cocknoodlesoup/static/media/about-850.6fb9afffe3fbeb2dabe0.webp",
@@ -11,10 +11,10 @@
     "static/media/cocknoodlesoup-browser-icon-150.webp": "/cocknoodlesoup/static/media/cocknoodlesoup-browser-icon-150.7df1f0385f35f74f484b.webp",
     "index.html": "/cocknoodlesoup/index.html",
     "main.09a1afc1.css.map": "/cocknoodlesoup/static/css/main.09a1afc1.css.map",
-    "main.8b591b4b.js.map": "/cocknoodlesoup/static/js/main.8b591b4b.js.map"
+    "main.7f228bf0.js.map": "/cocknoodlesoup/static/js/main.7f228bf0.js.map"
   },
   "entrypoints": [
     "static/css/main.09a1afc1.css",
-    "static/js/main.8b591b4b.js"
+    "static/js/main.7f228bf0.js"
   ]
 }
