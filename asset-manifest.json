@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Home/static/css/main.09a1afc1.css",
+    "main.js": "/Home/static/js/main.a8065e96.js",
+    "static/media/cos1-850.webp": "/Home/static/media/cos1-850.32fafeddc4efd9ea8a03.webp",
+    "static/media/cos3-850.webp": "/Home/static/media/cos3-850.b31e3aa67babb2a298d3.webp",
+    "static/media/about-850.webp": "/Home/static/media/about-850.6fb9afffe3fbeb2dabe0.webp",
+    "static/media/clean-base-650.webp": "/Home/static/media/clean-base-650.46521564e3d4d764cff7.webp",
+    "static/media/heat-650.webp": "/Home/static/media/heat-650.3d513dbe258c446984b5.webp",
+    "static/media/head3-850.webp": "/Home/static/media/head3-850.8bdd64ca150ed30ad317.webp",
+    "static/media/cocknoodlesoup-browser-icon-150.webp": "/Home/static/media/cocknoodlesoup-browser-icon-150.7df1f0385f35f74f484b.webp",
+    "index.html": "/Home/index.html",
+    "main.09a1afc1.css.map": "/Home/static/css/main.09a1afc1.css.map",
+    "main.a8065e96.js.map": "/Home/static/js/main.a8065e96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09a1afc1.css",
+    "static/js/main.a8065e96.js"
+  ]
+}
