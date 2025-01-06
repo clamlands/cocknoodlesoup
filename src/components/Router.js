@@ -13,732 +13,253 @@ export default function Router() {
   const [shows, setShows] = useState([]);
   const blogPosts = [
     {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
+      date: "August 8, 2024",
+      title: "Blog Post 6",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus. Duis a posuere lacus. Morbi tempus ante sollicitudin convallis sagittis.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
     },
     {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
+      date: "August 8, 2024",
+      title: "Blog Post 5",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
     },
     {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
+      date: "August 8, 2024",
+      title: "Blog Post 4",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
     },
     {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
+      date: "August 8, 2024",
+      title: "Blog Post 3",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
     },
     {
-      date: "August 8, 2023",
+      date: "August 8, 2024",
       title: "Blog Post 2",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
     },
     {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
+      date: "August 8, 2024",
+      title: "Blog Post 1",
       summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac magna lectus.",
       body: (
         <article className="blog-body">
           <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            ac magna lectus. Duis a posuere lacus. Morbi tempus ante
+            sollicitudin convallis sagittis. Aenean porttitor rutrum metus, eu
+            imperdiet risus blandit quis. Proin interdum hendrerit tellus ac
+            sollicitudin. Vivamus non lectus enim. Suspendisse potenti. Aenean
+            facilisis odio urna, vel aliquam magna blandit sed. Quisque turpis
+            enim, efficitur ac posuere sit amet, feugiat id nulla. Integer
+            sodales porttitor purus at hendrerit.
           </p>
           <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
+            Curabitur a nunc et ligula tincidunt congue. Vivamus quis congue
+            diam, at vehicula dui. Sed id augue a risus mattis bibendum in sit
+            amet est. Aenean vel egestas mi. Mauris eget sapien at ante
+            consequat rhoncus. Vivamus efficitur ultricies sem, ac finibus magna
+            bibendum vitae. Pellentesque at orci ipsum. Vivamus at massa dui.
+            Vestibulum maximus condimentum libero, tempus condimentum tellus
+            tempus at. Duis vel vestibulum nunc, vel maximus lacus. Quisque
+            consectetur nunc sit amet eros feugiat rhoncus.
           </p>
           <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "August 8, 2023",
-      title: "Blog Post 2",
-      summary:
-        "This is the beginning text of the blog post. In this card it will be limited to a maximum character length of perhaps two hundred.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
-          </p>
-        </article>
-      ),
-    },
-    {
-      date: "January 9, 2021",
-      title: "The Importance of Collective Memory",
-      summary:
-        "78 years 30 days passed between the day Japan bombed Pearl Harbor, and the day an armed mob stormed the U.S. Capitol.",
-      body: (
-        <article className="blog-body">
-          <p>
-            78 years 30 days passed between the day Japan bombed Pearl Harbor,
-            and the day an armed mob stormed the U.S. Capitol. The average
-            American lifespan is 78 years 6 months. I don’t think that’s a
-            coincidence.
-          </p>
-          <p>
-            A lifetime has passed since Americans were swept into World War 2.
-            The day those bombs fell, life for millions of Americans was altered
-            forever. For nearly half a million, it was cut way too short. Those
-            four years shaped entire generations, yet they will soon fade from
-            living memory. That’s dangerous.
-          </p>
-          <p>
-            In the early 4th Century B.C., invaders sacked the city of Rome and
-            slaughtered most of the Roman Senate. As they rebuilt, the Romans
-            created an emergency fund to pay troops in the event of another
-            invasion. That gold sat untouched for 350 years, until Julius Caesar
-            used it to pay his troops as he seized power in Rome.
-          </p>
-          <p>
-            The point is, having your city burned to the ground, your property
-            stolen, your people slaughtered and your women raped — this left
-            such a scar on the Roman psyche, they were still wary of it three
-            and a half centuries later. They understood the importance of
-            collective memory.
-          </p>
-          <p>
-            Practically no Americans are left who know what it’s like to have to
-            put life on hold and go clean up the mess made by a handful of evil
-            demagogues who weren’t stopped in time. If there were, maybe we
-            would have known better when Donald Trump came along.
+            Nunc vitae ante euismod, ullamcorper tellus eget, tincidunt elit.
+            Suspendisse non dui id lectus blandit euismod non vitae quam. Ut
+            tempus dapibus ornare. Morbi molestie quam nisi, lacinia faucibus
+            diam suscipit at. Fusce feugiat pharetra turpis, a porttitor lectus
+            porta non. Aenean in odio nisi. In ac dapibus dui. Nunc consectetur
+            nibh in consectetur sagittis. Nunc viverra mollis tellus sed
+            consectetur. Etiam sit amet ligula sit amet magna elementum faucibus
+            non at erat. Donec sagittis, libero vel scelerisque rutrum, nibh
+            ligula tempor lorem, a luctus massa sapien sed erat. Vivamus gravida
+            nibh vitae ultricies feugiat.
           </p>
         </article>
       ),
@@ -750,7 +271,7 @@ export default function Router() {
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/",
+          path: "/cocknoodlesoup",
           element: (
             <Home
               blogPosts={blogPosts.slice(0, 5)}

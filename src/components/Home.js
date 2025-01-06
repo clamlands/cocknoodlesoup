@@ -30,11 +30,10 @@ export default function Home({ blogPosts, shows, setShows }) {
           height="842"
         />
         <p className="about-text">
-          Matt Jordan is a Madison, WI based comedian and gay man. He spends all
-          his waking hours eating cock and noodles. This is why he wanted to
-          name this website "Cunt Balls". He's opened for Jim Norton and also
-          the homeless homo in the alley behind the new Chinese Buffet on
-          Universtiy Ave.
+          Matt Jordan is a Madison, WI based writer, comedian, and show producer
+          known for his dark and brazen takes. He has opened for national
+          headliners Jim Norton, Chris Distefano, and also the guy next in line
+          at the new Chinese Buffet on Universtiy Ave.
         </p>
       </div>
       <div className="columns">

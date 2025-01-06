@@ -24,7 +24,7 @@ export default function Nav() {
     <>
       <header>
         <div className="title-items">
-          <Link to="/">
+          <Link to="/cocknoodlesoup">
             <img
               src={cock}
               alt="Cocknoodlesoup logo"
@@ -33,7 +33,7 @@ export default function Nav() {
               height="157"
             />
           </Link>
-          <Link to="/" className="no-underline">
+          <Link to="/cocknoodlesoup" className="no-underline">
             <h1 className="title">cocknoodlesoup</h1>
           </Link>
         </div>
@@ -49,7 +49,7 @@ export default function Nav() {
         </div>
         <nav className={menuClass}>
           <NavLink
-            to="/"
+            to="/cocknoodlesoup"
             onClick={() => {
               updateMenu();
             }}
